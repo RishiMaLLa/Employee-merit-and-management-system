@@ -1,0 +1,84 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    overflow:visible;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#outer{
+    display: flex;
+    flex-direction: column;
+    /* position: sticky; */
+    /* top: 0px; */
+}
+#navheading{
+    font-size: 3rem;
+    color: black;
+    font-weight: bold;
+    margin: 10px 40px;
+    /* margin-top: 35px; */
+    text-align: center;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+}
+#navbar::before{
+    background: url(img/loginbg.jpeg) no-repeat center center/cover;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 63%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#logo{
+    margin: 30px;
+
+}
+#logo img{
+    height: 60px;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+.items a {
+text-decoration: none;
+margin:0px 20px;
+color: black;
+font-size: 1.3rem;
+font-weight: bold;
+}
+.items a:hover{
+    text-decoration: underline;
+    color: rgb(60, 60, 218);
+}
+section{
+    position: absolute;
+    top: 40%;
+    /* margin: 30px; */
+}
+section::before{
+    /* background: url(img/bodybg.jpeg); */
+    content: '';
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    z-index: -1;
+    opacity: 0.5;
+}
+#sectionheading{
+    font-size: 2.2rem;
+    color: black;
+    margin:30px 200px;
+}
+p{
+    font-size: 1.2rem;
+    margin: 25px 0px;
+    color: rgb(57, 14, 14);
+    margin: 30px 200px;
+}
